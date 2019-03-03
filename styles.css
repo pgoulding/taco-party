@@ -1,0 +1,73 @@
+/*---------- Body ------------------*/
+*{
+  border-top: 1px solid red;
+  box-sizing: border-box;
+}
+
+body{
+/*  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 1fr 200px;*/
+}
+
+a{
+  text-transform: none;
+}
+
+/*---------- Header ----------------*/
+header{
+background-color: #feb236;
+}
+
+h1{
+  margin: 0;
+}
+/*---------- Nav Bar ---------------*/
+nav{
+background-color: #6b5b95;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+/*---------- Aritcle ---------------*/
+article{
+background-color: #d64161;
+}
+
+/*---------- Aside -----------------*/
+aside{
+background-color: #ff7b25;
+}
+
+/*---------- Footer ----------------*/
+footer{
+ color: white;
+ background-color: darkslategrey;
+}
+
+.footer-cr{
+  color: lightgrey;
+}
+
+/*---------- Media Queries ---------*/
+
+/*---- Large Tablet/Small Comp -----*/
+@media screen and (max-width: 1024px){
+
+}
+
+/*---- Typical Tablet Size ---------*/
+@media screen and (max-width: 768px){
+
+}
+
+/*---- Large Phones ----------------*/
+@media screen and (max-width: 440px){
+
+}
+
+/*---- Small Screens ---------------*/
+@media screen and (max-width: 320px){
+
+}
