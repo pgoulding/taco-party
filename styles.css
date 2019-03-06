@@ -1,26 +1,39 @@
 /*---------- Body ------------------*/
 *{
-  border-top: 1px solid red;
+/*  border-top: 1px solid red;*/
   box-sizing: border-box;
+}
+html{
+background-color: darkslategrey;
 }
 
 body{
-/*  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 1fr 200px;*/
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr;
+  grid-template-rows: 100px 40px 1fr 200px;
+  background-color: #d64161;
 }
 
 a{
-  text-transform: none;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
 }
 
 /*---------- Header ----------------*/
 header{
 background-color: #feb236;
+grid-column: 1/4;
+grid-row: 1;
 }
 
 h1{
   margin: 0;
+  padding: 10px;
+}
+
+.header-img{
+  width: 40px;
 }
 /*---------- Nav Bar ---------------*/
 nav{
@@ -28,26 +41,54 @@ background-color: #6b5b95;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
+grid-column: 1/4;
+grid-row: 2;
+}
+
+a:hover{
+ background-color: #aba0c5;
+ color: black;
 }
 
 /*---------- Aritcle ---------------*/
 article{
 background-color: #d64161;
+grid-column: 2/span 2;
+padding: 0 20px 20px 20px;
+max-width: 1000px;
 }
 
+.taco-bell{
+  width: 500px;
+  justify-content: center;
+  align-content: center;
+}
 /*---------- Aside -----------------*/
 aside{
 background-color: #ff7b25;
+grid-column: 1;
+grid-row: 3/4;
+}
+
+h3{
+  padding-left:20px;
 }
 
 /*---------- Footer ----------------*/
 footer{
  color: white;
  background-color: darkslategrey;
+ grid-row: 4;
+ grid-column: 1/4;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ padding: 50px;
 }
 
-.footer-cr{
-  color: lightgrey;
+.footer-links:hover{
+  background-color: darkslategrey;
+  color: white;
 }
 
 /*---------- Media Queries ---------*/
